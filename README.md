@@ -1,5 +1,5 @@
 # Multi-view Detection and 3D Localization of Belgium Traffic Sign 
-![result gif](/assets/figures/result_seq04.gif)
+![result gif](./figures/result_seq04.gif)
 This repo aims to parse the 3D mapping sequences of [BelgiumTS Dataset](https://btsd.ethz.ch/shareddata/), and solve the 3D localization using [Triangulation](https://www.wikiwand.com/en/Triangulation_(computer_vision)) and [Sparse Bundle Adjustment](https://scipy-cookbook.readthedocs.io/items/bundle_adjustment.html).
 
 ---
@@ -13,7 +13,7 @@ The sequence file contains the annotations of detected poles and the traffic sig
 ---
 ### Camera parameters
 The camera set file contains all parameters for the camera model, including intrisic calibration matrix **K**, 3 radial distortion parameters, rotation matrix **Rc**, and translation vector **tc**. Specifically, **Rc** and **tc** are mapping from the camera coordinate (origin at the camera center) to the car coordinate (origin at the car center). _Check camera.pdf_.  
-Here is the relative position of cameras.![camera pos](/assets/figures/camera_pos.png)
+Here is the relative position of cameras.![camera pos](./figures/camera_pos.png)
 
 ---
 ### Poses parameters
@@ -22,7 +22,7 @@ The poses file contains extrinsic parameters (rotation matrix **Rw** and transla
 ---
 ## Triangulation
 This step localize the traffic sign by back projecting the centers of bounding boxes and finding the intersections with optical rays.
-![triangulation](/assets/figures/triangulation.png)
+![triangulation](./figures/triangulation.png)
 
 ---
 ## Sparse Bundle Adjustment
