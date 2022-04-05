@@ -30,4 +30,4 @@ Since there is a set of detected images with corresponding 3D points (traffic si
 ---
 ## License & Copyright
 © Bailiang Jian  
-Licensed under the [MIT Licensce](./LICENSCE)
+Licensed under the [MIT License](./LICENSE)
